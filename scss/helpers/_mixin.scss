@@ -1,0 +1,9 @@
+@mixin customButton($color, $bg, $fs) {
+    color: $color;
+    background-color: $bg;
+    border: none;
+    border-radius: 30px;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: $fs;
+}

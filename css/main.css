@@ -4,4 +4,120 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
+
+body,
+html {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+}
+
+button {
+  color: white;
+  background-color: #b61984;
+  border: none;
+  border-radius: 30px;
+  padding: 10px 15px;
+  cursor: pointer;
+  font-size: 0.875rem;
+}
+
+#myHeader {
+  background-color: transparent;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  z-index: 1;
+  margin-top: -1rem;
+}
+
+#myHeader .logo {
+  width: 80px;
+  height: auto;
+}
+
+#myHeader .nav-item .nav-link {
+  padding: 1rem;
+  font-weight: 600;
+  position: relative;
+  line-height: 80px;
+  font-size: .875rem;
+}
+
+#myHeader .nav-item .nav-link:hover, #myHeader .nav-item .nav-link.active {
+  color: #b61984;
+}
+
+#myHeader .nav-item .nav-link:hover::after, #myHeader .nav-item .nav-link.active::after {
+  -webkit-transform: translate(-50%, 300%) scale(1);
+          transform: translate(-50%, 300%) scale(1);
+}
+
+#myHeader .nav-item .nav-link::after {
+  content: "";
+  width: .5rem;
+  height: .5rem;
+  background-color: #b61984;
+  display: block;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, 300%) scale(0);
+          transform: translate(-50%, 300%) scale(0);
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+#myHeader i.fa {
+  font-size: 1rem;
+  padding-inline: .3rem;
+  cursor: pointer;
+}
+
+#myHeader i.fa:hover {
+  color: #b61984;
+}
+
+.carousel {
+  background-image: url(../../images/yellow_top_wave_01.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding-top: 4rem;
+}
+
+.carousel .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.carousel .left {
+  width: 45%;
+}
+
+.carousel .left .sub-title {
+  color: #b61984;
+  display: block;
+  font-size: 1.1rem;
+  margin-bottom: .5rem;
+}
+
+.carousel .left .title {
+  font-size: 3.5rem;
+  font-weight: bold;
+}
+
+.carousel .right {
+  width: 45%;
+}
+
+.carousel .right img {
+  max-width: 100%;
+}
 /*# sourceMappingURL=main.css.map */

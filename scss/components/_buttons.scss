@@ -1,0 +1,3 @@
+button {
+    @include customButton(white, $color-1, .875rem);
+}

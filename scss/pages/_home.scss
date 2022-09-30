@@ -61,14 +61,8 @@
     background-repeat: no-repeat;
     padding-top: 4rem;
 
-    .container {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-
     .left {
-        width: 45%;
+        // width: 45%;
 
         .sub-title {
             color: $color-1;
@@ -84,10 +78,81 @@
     }
 
     .right {
-        width: 45%;
+        // width: 45%;
 
         img {
             max-width: 100%;
+        }
+    }
+}
+
+.teacherList {
+    text-align: center;
+    background-image: url("../../images/Violet_top_left_wave.png"), url("../../images/Wave_White_bottom_right_shape_01.png");
+    background-repeat: no-repeat, no-repeat;
+    background-position: top left, bottom left;
+    background-size: contain, contain;
+    padding-top: 100px;
+
+    .teacher {
+        background-color: white;
+        border-radius: 5px;
+        overflow: hidden;
+        transition: all .5s;
+
+        &:hover {
+            box-shadow: 0 8px 16px #888888;
+
+            img {
+                transform: scale(1.03);
+                transform-origin: center bottom;
+            }
+        }
+
+        img {
+            width: 100%;
+            transition: all .5s;
+        }
+
+        .teacher__info {
+            padding: .7rem;
+
+            .subtitile {
+                font-size: .75rem;
+                margin-bottom: .7rem;
+                color: $color-1;
+                display: block;
+            }
+
+            .content {
+                font-size: 1.5rem;
+                font-weight: 600;
+            }
+
+            p {
+                font-size: .875rem;
+            }
+        }
+    }
+}
+
+.form {
+    .input-group {
+        .input-group-text {
+            border-right: none;
+            border-radius: 30px 0 0 30px;
+            background-color: white;
+        }
+
+        .form-control {
+            border-left: none;
+            border-radius: 0 30px 30px 0;
+            background-color: white;
+        }
+
+        .form-control:focus {
+            border-color: #888888;
+            border-left: none;
         }
     }
 }

@@ -85,22 +85,6 @@ button {
   padding-top: 4rem;
 }
 
-.carousel .container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.carousel .left {
-  width: 45%;
-}
-
 .carousel .left .sub-title {
   color: #b61984;
   display: block;
@@ -113,11 +97,79 @@ button {
   font-weight: bold;
 }
 
-.carousel .right {
-  width: 45%;
-}
-
 .carousel .right img {
   max-width: 100%;
+}
+
+.teacherList {
+  text-align: center;
+  background-image: url("../../images/Violet_top_left_wave.png"), url("../../images/Wave_White_bottom_right_shape_01.png");
+  background-repeat: no-repeat, no-repeat;
+  background-position: top left, bottom left;
+  background-size: contain, contain;
+  padding-top: 100px;
+}
+
+.teacherList .teacher {
+  background-color: white;
+  border-radius: 5px;
+  overflow: hidden;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+.teacherList .teacher:hover {
+  -webkit-box-shadow: 0 8px 16px #888888;
+          box-shadow: 0 8px 16px #888888;
+}
+
+.teacherList .teacher:hover img {
+  -webkit-transform: scale(1.03);
+          transform: scale(1.03);
+  -webkit-transform-origin: center bottom;
+          transform-origin: center bottom;
+}
+
+.teacherList .teacher img {
+  width: 100%;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+.teacherList .teacher .teacher__info {
+  padding: .7rem;
+}
+
+.teacherList .teacher .teacher__info .subtitile {
+  font-size: .75rem;
+  margin-bottom: .7rem;
+  color: #b61984;
+  display: block;
+}
+
+.teacherList .teacher .teacher__info .content {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.teacherList .teacher .teacher__info p {
+  font-size: .875rem;
+}
+
+.form .input-group .input-group-text {
+  border-right: none;
+  border-radius: 30px 0 0 30px;
+  background-color: white;
+}
+
+.form .input-group .form-control {
+  border-left: none;
+  border-radius: 0 30px 30px 0;
+  background-color: white;
+}
+
+.form .input-group .form-control:focus {
+  border-color: #888888;
+  border-left: none;
 }
 /*# sourceMappingURL=main.css.map */

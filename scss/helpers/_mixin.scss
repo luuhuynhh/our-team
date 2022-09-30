@@ -7,3 +7,13 @@
     cursor: pointer;
     font-size: $fs;
 }
+
+@mixin responsive($screen) {
+    @if(map-has-key($map: $break-point, $key: $creen)) {
+        $value: map-get($map: $break-point, $key: $screen);
+
+        @media screen and (max-width: $value) {
+            @content;
+        }
+    }
+}

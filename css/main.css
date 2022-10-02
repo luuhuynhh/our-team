@@ -79,10 +79,12 @@ button {
 }
 
 .carousel {
-  background-image: url(../../images/yellow_top_wave_01.png);
-  background-size: contain;
+  background-image: url(../../images/yellow_top_wave_01.png), url("../../images/Violet_top_left_wave.png");
+  background-size: contain, contain;
+  background-position: top left, bottom left;
   background-repeat: no-repeat;
   padding-top: 4rem;
+  padding-bottom: 4rem;
 }
 
 .carousel .left .sub-title {
@@ -103,11 +105,13 @@ button {
 
 .teacherList {
   text-align: center;
-  background-image: url("../../images/Violet_top_left_wave.png"), url("../../images/Wave_White_bottom_right_shape_01.png");
-  background-repeat: no-repeat, no-repeat;
-  background-position: top left, bottom left;
-  background-size: contain, contain;
-  padding-top: 100px;
+  background-image: url("../../images/Wave_White_bottom_right_shape_01.png");
+  background-repeat: no-repeat;
+  background-position: bottom left;
+  background-size: contain;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+  background-color: #dcd1f0;
 }
 
 .teacherList .teacher {
@@ -156,6 +160,123 @@ button {
   font-size: .875rem;
 }
 
+.form {
+  background-image: url(../../images/accent_bottom_wave_01.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: bottom left;
+}
+
+.form .form__content {
+  padding: 3rem;
+}
+
+.form .left {
+  padding-left: 3rem;
+}
+
+.form .right {
+  -webkit-box-shadow: 1px 1px 8px #888888;
+          box-shadow: 1px 1px 8px #888888;
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 10px;
+}
+
+.form .right h1 {
+  font-size: 2.2rem;
+  line-height: 1.2;
+  font-weight: bold;
+}
+
+.form .right form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  height: 80%;
+}
+
+.form .right button {
+  width: 40%;
+}
+
+.form .div {
+  position: relative;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  margin: .5rem auto;
+}
+
+.form .div input {
+  border-radius: 30px;
+  padding: .5rem 1rem;
+  padding-left: 1.75rem;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  width: 100%;
+}
+
+.form .div input:focus {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  outline: none;
+}
+
+.form .div i {
+  position: absolute;
+  top: 50%;
+  left: 1.5rem;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  color: #b61984;
+}
+
+.form .div select {
+  width: 100%;
+  border-radius: 30px;
+  padding: .5rem 1rem;
+  padding-left: 1.75rem;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.form .div select:focus {
+  outline: none;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.form .div textarea {
+  width: 100%;
+  border-radius: 30px;
+  padding: .5rem 1rem;
+  padding-left: 1.75rem;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.form .div textarea:focus {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  outline: none;
+}
+
+.form .div i.area {
+  top: 1.2rem;
+}
+
 .form .input-group .input-group-text {
   border-right: none;
   border-radius: 30px 0 0 30px;
@@ -178,7 +299,7 @@ footer {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  padding: 150px 0;
+  padding: 6rem 0 12rem 0;
   color: white;
 }
 

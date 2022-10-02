@@ -156,3 +156,114 @@
         }
     }
 }
+
+footer {
+    background-image: url("../../images/footer_background.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 150px 0;
+    color: white;
+
+    .item {
+
+        div {
+            padding: .45rem 0;
+            position: relative;
+            font-size: .875rem;
+        }
+
+        div.link {
+            cursor: pointer;
+            transition: all .5s;
+        }
+
+        div.link:hover {
+            color: #888888;
+        }
+
+        .email-group {
+            position: relative;
+            width: 100%;
+
+            input {
+                @include customButton(white, $color-1, .875rem);
+                width: 100%;
+                text-align: center;
+                background-color: transparent;
+                position: relative;
+                z-index: 10;
+                border: 1px solid rgba(255, 255, 255, .1);
+            }
+
+            input:focus {
+                border-color: white;
+                outline: none;
+            }
+
+            span {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+        }
+
+        button {
+            @include customButton(black, white, .875rem);
+            width: 100%;
+            position: relative;
+            transition: all .5s;
+        }
+
+        button:hover {
+            box-shadow: 0 0 0 1px #fff inset;
+            color: #fff;
+            background-color: $color-1;
+        }
+
+        form {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+        }
+
+        div.link::after {
+            content: "";
+            width: 60px;
+            height: .5px;
+            background-color: rgba(0, 0, 0, .1);
+            position: absolute;
+            bottom: 0;
+            left: 2px;
+        }
+
+        h5 {
+            font-size: 1.5rem;
+            font-weight: bold;
+            padding-bottom: .8rem;
+        }
+
+        span {
+            font-size: .9rem;
+            padding-left: .8rem;
+            line-height: 1.1;
+        }
+
+        .social {
+            padding-top: .75rem;
+
+            i.fa {
+                font-size: 1rem;
+                padding-inline: .3rem;
+                cursor: pointer;
+                color: white;
+
+                &:hover {
+                    color: black;
+                }
+            }
+        }
+    }
+
+}

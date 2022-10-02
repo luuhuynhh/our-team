@@ -172,4 +172,133 @@ button {
   border-color: #888888;
   border-left: none;
 }
+
+footer {
+  background-image: url("../../images/footer_background.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 150px 0;
+  color: white;
+}
+
+footer .item div {
+  padding: .45rem 0;
+  position: relative;
+  font-size: .875rem;
+}
+
+footer .item div.link {
+  cursor: pointer;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+footer .item div.link:hover {
+  color: #888888;
+}
+
+footer .item .email-group {
+  position: relative;
+  width: 100%;
+}
+
+footer .item .email-group input {
+  color: white;
+  background-color: #b61984;
+  border: none;
+  border-radius: 30px;
+  padding: 10px 15px;
+  cursor: pointer;
+  font-size: 0.875rem;
+  width: 100%;
+  text-align: center;
+  background-color: transparent;
+  position: relative;
+  z-index: 10;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+footer .item .email-group input:focus {
+  border-color: white;
+  outline: none;
+}
+
+footer .item .email-group span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+footer .item button {
+  color: black;
+  background-color: white;
+  border: none;
+  border-radius: 30px;
+  padding: 10px 15px;
+  cursor: pointer;
+  font-size: 0.875rem;
+  width: 100%;
+  position: relative;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+footer .item button:hover {
+  -webkit-box-shadow: 0 0 0 1px #fff inset;
+          box-shadow: 0 0 0 1px #fff inset;
+  color: #fff;
+  background-color: #b61984;
+}
+
+footer .item form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .item div.link::after {
+  content: "";
+  width: 60px;
+  height: .5px;
+  background-color: rgba(0, 0, 0, 0.1);
+  position: absolute;
+  bottom: 0;
+  left: 2px;
+}
+
+footer .item h5 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding-bottom: .8rem;
+}
+
+footer .item span {
+  font-size: .9rem;
+  padding-left: .8rem;
+  line-height: 1.1;
+}
+
+footer .item .social {
+  padding-top: .75rem;
+}
+
+footer .item .social i.fa {
+  font-size: 1rem;
+  padding-inline: .3rem;
+  cursor: pointer;
+  color: white;
+}
+
+footer .item .social i.fa:hover {
+  color: black;
+}
 /*# sourceMappingURL=main.css.map */

@@ -53,6 +53,17 @@
             color: $color-1;
         }
     }
+
+    button {
+        transition: all .5s;
+        border: 1px solid transparent;
+    }
+
+    button:hover {
+        color: $color-1;
+        background-color: white;
+        border: 1px solid $color-1;
+    }
 }
 
 .carousel {

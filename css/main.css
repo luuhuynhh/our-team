@@ -78,6 +78,18 @@ button {
   color: #b61984;
 }
 
+#myHeader button {
+  -webkit-transition: all .5s;
+  transition: all .5s;
+  border: 1px solid transparent;
+}
+
+#myHeader button:hover {
+  color: #b61984;
+  background-color: white;
+  border: 1px solid #b61984;
+}
+
 .carousel {
   background-image: url(../../images/yellow_top_wave_01.png), url("../../images/Violet_top_left_wave.png");
   background-size: contain, contain;
